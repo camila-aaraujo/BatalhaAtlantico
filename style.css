@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box; /* Inclui padding e borda nas dimensões */
+}
+
+body{
+
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+
+.navbar{
+    background-color: #5F1A1F; /* Cor da barra de navegação */
+    width: 100%;
+    padding: 7px ;
+}
+.navbar li{
+    margin-right: 3%;
+}
+.navbar ul {
+  color: #D0CBC7;
+  text-align: right;
+   
+}
+
+.navbar ul > li { 
+    display: inline-block;
+    position: relative;
+   
+    color: D0CBC7;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute;
+    background-color: #D0CBC7; /* Cor do submenu */
+    padding: 10px;
+    top: 100%; /* Para aparecer logo abaixo do item pai */
+}
+
+.navbar ul > li:hover .submenu {
+    display: block; /* Mostra o submenu ao passar o mouse */
+}
+
+.submenu li {
+    color: white;
+   
+}
+
+@font-face {
+    font-family: 'Koulen';
+    src: url('Koulen-Regular.ttf') format('truetype');
+    font-weight: 200;  /* normal */
+    font-style: normal;
+  }
+
+  h2{
+    font-family: 'Koulen';
+    color: #5F1A1F;
+  }
